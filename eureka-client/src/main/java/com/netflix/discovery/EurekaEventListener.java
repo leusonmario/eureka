@@ -14,4 +14,6 @@ public interface EurekaEventListener {
      * @param event
      */
     public void onEvent(EurekaEvent event);
+
+    public void inEvent(EurekaEvent event);
 }
