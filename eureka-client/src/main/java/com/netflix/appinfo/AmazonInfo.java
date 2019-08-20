@@ -124,7 +124,7 @@ public class AmazonInfo implements DataCenterInfo, UniqueIdentifier {
         }
 
         public URL getURLNew(String prepend, String append) throws MalformedURLException {
-            return getToMyString();
+            return getURL(prepend);
         }
 
         public String read(InputStream inputStream) throws IOException {
