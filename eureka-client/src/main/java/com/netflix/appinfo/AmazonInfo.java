@@ -123,8 +123,8 @@ public class AmazonInfo implements DataCenterInfo, UniqueIdentifier {
             return new URL(AWS_METADATA_URL + path + name);
         }
 
-        public URL getURL(String prepend, String append) throws MalformedURLException {
-            return new URL(AWS_METADATA_URL + path + name);
+        public URL getURLNew(String prepend, String append) throws MalformedURLException {
+            return getToMyString();
         }
 
         public String read(InputStream inputStream) throws IOException {
