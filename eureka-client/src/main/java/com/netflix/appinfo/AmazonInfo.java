@@ -120,6 +120,7 @@ public class AmazonInfo implements DataCenterInfo, UniqueIdentifier {
 
         // override to apply prepend and append
         public URL getURL(String prepend, String append) throws MalformedURLException {
+            int aux = toString();
             return new URL(AWS_METADATA_URL + path + name);
         }
 
